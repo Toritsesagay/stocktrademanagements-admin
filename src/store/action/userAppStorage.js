@@ -107,7 +107,7 @@ export const checkIfAdminIsLoggedIn = () => {
 export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
-    //https://brooker-backend.onrenderl.com
+    //https://stocktrademanagements-backend.onrender.com
     try {
       let response = await fetch('https://stocktrademanagements-backend.onrender.com/adminlogin', {
         method: "POST",

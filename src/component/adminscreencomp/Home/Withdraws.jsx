@@ -45,6 +45,8 @@ export const AdminWithdrawsComponent = ({ status }) => {
         }
         //do some filtering here
 
+        console.log(res.message)
+
         setWithdrawList(res.message)
         setfilteredWithdraws(res.message)
         setIsLoading(false)
@@ -224,7 +226,7 @@ export const AdminWithdrawsComponent = ({ status }) => {
 
                         {withdrawList.map(data => <tr key={data.__id} >
                             <td >
-                                {data.user.email}
+                                {data.name}
                             </td>
 
                             <td >

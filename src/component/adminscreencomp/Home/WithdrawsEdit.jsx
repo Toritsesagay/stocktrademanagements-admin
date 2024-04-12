@@ -59,7 +59,7 @@ export const AdminWithrawEditComponent = ({ updateHandler, }) => {
                         <label>
                             Withdrawer Name
                         </label>
-                        <input value={isData.user.email} type='text' readOnly />
+                        <input value={isData.name} type='text' readOnly />
                     </div>
                     
                     <div className={styles.inputCards}>
